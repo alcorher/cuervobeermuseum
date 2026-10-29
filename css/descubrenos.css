@@ -1,0 +1,176 @@
+
+.historia-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+}
+
+
+.historia-img-pc {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 101vh;
+    z-index: 1;
+}
+
+.historia-img-pc img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.historia-content { 
+    width: 75%;
+    display: flex;
+    z-index: 2;
+}
+
+.historia-texto-container {
+    flex: 1 1 50%; 
+    padding: 4lh 1rem;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(184, 146, 65, 0.6)), url(../img/bubbling.gif);
+    background-size: cover;
+    background-position: center;
+    line-height: 1.6;
+    background-color: rgba(168, 123, 0, 0.63);
+    background-blend-mode: lighten;
+}
+
+.historia-texto {
+    background-color: rgba(184, 146, 65, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(184, 146, 65, 0.5);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.historia-texto h2 {
+    color: #1a472a;
+    margin-bottom: 0.2lh;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.historia-texto p {
+    margin-bottom: 1lh;
+    font-size: 1.1rem;
+}
+
+.historia-aside {
+    position: sticky;
+    top: 0;
+    right: 0;
+    flex: 0 0 25%; 
+    padding: 1.5rem;
+    background-color: #f8f1e3;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.aside-card {
+    position: sticky;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 4px;
+    border-left: 4px solid #d4af37;
+    margin-bottom: 1lh;
+}
+
+.aside-card h3 {
+    color: #1a472a;
+    margin-bottom: 0.5rem;
+}
+
+.aside-card p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.arrow{
+   .arrow {
+    background-color: #1a472a;
+    color: #d4af37;
+    width: 40px;
+    height: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+}
+
+@media (max-width: 1400px) {
+     .historia-aside {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        padding: 4rem 2rem;
+        transition: right 0.3s ease;
+        z-index: 100;
+        overflow-y: auto;
+    }
+     .historia-aside.active {
+        right: 0;
+    }
+
+    
+.arrow {
+    background-color: #1a472a;
+    color: #d4af37;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.arrow:hover {
+    background-color: #24653b;
+    transform: scale(1.1);
+}
+
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .historia-container {
+        flex-direction: column;
+    }
+    
+    .historia-img-pc {
+        position: relative;
+        width: 100%;
+        height: auto; 
+    }
+    
+    .historia-content {
+        margin-left: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+
+}
+
